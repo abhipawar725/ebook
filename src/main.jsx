@@ -6,8 +6,13 @@ import './index.css'
 import Dashboard from './components/Admin/Dashboard/Dashboard'
 import Ebook from './components/Admin/Ebook/Ebook'
 import Setting from './components/Admin/Setting/Setting'
+import Signup from './components/Signup'
 
 const router = createBrowserRouter([
+  {
+    path: 'signup',
+    Component: Signup
+  },
   {
     path: 'admin',
     Component: Layout,
