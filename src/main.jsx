@@ -3,15 +3,21 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './components/Admin/Layout'
 import './index.css'
+import 'remixicon/fonts/remixicon.css';
 import Dashboard from './components/Admin/Dashboard/Dashboard'
 import Ebook from './components/Admin/Ebook/Ebook'
 import Setting from './components/Admin/Setting/Setting'
 import Signup from './components/Signup'
+import Otp from './components/Otp'
 
 const router = createBrowserRouter([
   {
     path: 'signup',
     Component: Signup
+  },
+    {
+    path: 'otp',
+    Component: Otp
   },
   {
     path: 'admin',
